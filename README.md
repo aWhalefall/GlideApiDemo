@@ -166,5 +166,16 @@ public class GlideApi {
 
 ## 效果图
 
+![入口](https://github.com/yatou252303/GlideApiDemo/blob/master/image/main.jpeg)
+![这里写图片描述](https://github.com/yatou252303/GlideApiDemo/blob/master/image/two1.jpeg)
+![这里写图片描述](https://github.com/yatou252303/GlideApiDemo/blob/master/image/two2.jpeg)
 
 
+
+
+
+
+>引用
+
+  >glide http://blog.csdn.net/yulyu/article/details/55053099
+  
