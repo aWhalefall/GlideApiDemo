@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="imageUrl2"
+            type="String" />
+
+        <variable
+            name="click"
+            type="dragger2.nuoyuan.com.glideapidemo.glideApiTest.GlideApi" />
+
+        <variable
+            name="activity"
+            type="dragger2.nuoyuan.com.glideapidemo.activity.NormalActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <dragger2.nuoyuan.com.glideapidemo.utils.NYImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:error="@{@drawable/error}"
+                app:imageUrl="@{imageUrl2}" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="newbie00001" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="@{() -> click.Click(activity,0)}"
+                android:text="加载本地资源" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="loading"
+                android:text="加载网络" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,1)}"
+                android:text="加载Assets" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,2)}"
+                android:text="加载Drable 文件加下图片" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,3)}"
+                android:text="加载custom Model" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,4)}"
+                android:text="跳转到 gallery" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,5)}"
+                android:text="跳转到 RecycleView gallery" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,6)}"
+                android:text="跳转到 skipCache" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,7)}"
+                android:text="加载Gif" />
+
+            <ImageView
+                android:id="@+id/gif_imag"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,8)}"
+                android:text="加载视频缩略图" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,9)}"
+                android:text="清除缓存" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,10)}"
+                android:text="清除缓存" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,11)}"
+                android:text="缩放" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,12)}"
+                android:text="自定义圆角" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> click.Click(activity,13)}"
+                android:text="图片裁切" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

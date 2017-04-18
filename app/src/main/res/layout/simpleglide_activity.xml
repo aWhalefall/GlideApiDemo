@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="imageUrl"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loading"
+            android:text="加载图片" />
+
+        <dragger2.nuoyuan.com.glideapidemo.utils.NYImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:imageUrl="@{imageUrl}" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="newbie00001" />
+
+    </LinearLayout>
+
+</layout>
