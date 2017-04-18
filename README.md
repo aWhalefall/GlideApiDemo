@@ -173,6 +173,14 @@ public class GlideApi {
 
 
 
+有问题请于作者联系279642707@qq.com ^_^!
+---
+### 打个小广告^_^
+**gitHub** :https://github.com/yatou252303  如对您有帮助,欢迎点Star支持,谢谢~
+
+**技术博客** :http://blog.csdn.net/o279642707
+# END
+
 
 
 >引用
